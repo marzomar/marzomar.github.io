@@ -231,3 +231,11 @@ a:hover, a:focus, a:active {
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
  
 }
+
+/*Correction pour W3S Validator */
+.linkd {
+  width: 50px;
+}
+.list-inline-item {
+  width: 60px;
+}
