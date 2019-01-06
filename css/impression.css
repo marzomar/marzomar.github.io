@@ -1,0 +1,33 @@
+body {
+    font-size: 0.95em;
+}
+
+.navbar {
+    display: none;
+}
+#contact {
+    display: none;
+}
+.logo {
+    display: none;
+}
+.list-inline-item {
+    display: block;
+    float: left;
+}
+.work {
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+h2 {
+    text-align:center;
+    text-decoration: underline;
+}
+#interests {
+    font-size: 0.9em;
+}
