@@ -1,9 +1,5 @@
-/*!
- * Start Bootstrap - Resume v5.0.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
- */
- html {
+/* Permet un defilement plus doux */
+html {
   scroll-behavior: smooth;
 }
 
@@ -13,14 +9,14 @@ body {
   padding-top: 54px;
   color: #868e96;
 }
-
+/* Modifie le padding pour les grands ecrans*/
 @media (min-width: 992px) {
   body {
     padding-top: 0;
     padding-left: 17rem;
   }
 }
-
+/*Style pour le texte*/
 h1,
 h2,
 h3,
@@ -58,59 +54,12 @@ p.lead {
   font-size: 1.5rem;
 }
 
-/* .social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
-}
-
-.social-icons a:last-child {
-  margin-right: 0;
-}
-
-.social-icons a:hover {
-  background-color: #BD5D38;
-}
- */
-.linkd{
-  width: 3rem;
-  height: 3rem;
-}
-/* }
-
-.dev-icons {
-  font-size: 3rem;
-}
-}
-
-.dev-icons {
-  font-size: 3rem;
-}
-
-.dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
-}
-.dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
-} */
-
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-
-#sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
-}
-
+/* Nav bar Vertical style pour grand ecran*/
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -135,7 +84,7 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
+    max-width: 12rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
@@ -166,7 +115,7 @@ p.lead {
     display: block;
   }
 }
-
+/*Style pour les differentes sections */
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
@@ -177,6 +126,7 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
+/*Style pour les differentes sections (Format tablette)*/
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -185,14 +135,14 @@ section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
-
+/*Style sections Grand ecran*/
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
-
+/*Couleurs pour le textes*/
 .bg-primary {
   background-color: #009666 !important;
 }
@@ -208,6 +158,9 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+              /*-----------------Menu Hamburger et animations*-----------------/
+
+/*Rend transparent le contour*/                               
 .navbar-toggler {
   border: none;
   background: transparent !important;
@@ -216,7 +169,7 @@ a:hover, a:focus, a:active {
   outline: none;
   background: transparent !important;
 }
-
+/*Couleur et style + base d'animation pour retour a la normal */
 .navbar-toggler .icon-bar {
   background-color: #fff;
   transform: rotate(0deg) translate(0px, 0px);
@@ -229,25 +182,20 @@ a:hover, a:focus, a:active {
   height: 2px;
   border-radius: 1px;
 }
-
+/*Espacement entre les barres*/
 .navbar-toggler .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-
+/*Animation Barre n°2 pour le hover*/
 .icon-bar:nth-child(2) {
   width: 16px;
   transition: ease all .6s;
 }
-
 .navbar-toggler:hover > .icon-bar:nth-child(2){
   width: 22px;
   transition: ease all .6s;
 }
-.navbar-toggler:active > .icon-bar:nth-child(2){
-  width: 22px;
-  transition: ease all .6s;
-}
-
+/*Animation bouton Hamburger (Rotation Barre N°1 et 3 et disparition de la N°2*/
 .navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 4px);
   transition: ease all .6s;
