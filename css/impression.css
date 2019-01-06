@@ -11,6 +11,12 @@ body {
 .logo {
     display: none;
 }
+#project{
+    display: none;
+}
+hr:nth-child(3){
+    display: none;
+}
 .list-inline-item {
     display: block;
     float: left;
