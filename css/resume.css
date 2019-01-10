@@ -234,3 +234,34 @@ a:hover, a:focus, a:active {
 .linkd {
   width: 50px;
 }
+.cv {
+  width: 50px;
+}
+
+/*--------------*/
+
+#video {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: 3;
+  background-size: contain;
+}
+#video-background {
+  /*  making the video fullscreen  */
+    position: absolute;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  h1 {text-align: center}
+
+  #mail {
+    text-align: center;
+  }

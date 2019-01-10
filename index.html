@@ -23,7 +23,8 @@
         <span class="d-block d-lg-none">Marzougui Omar</span>
                     <!--Ecran Large-->
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="css/Image/dumbledore2.jpg" alt="Image de dumbledore">
+          <img id="dumb" class="img-fluid img-profile rounded-circle mx-auto mb-2" onclick="document.getElementById('video').style.display='block';" src="css/Image/dumbledore2.jpg" alt="Image de dumbledore">
+          <video id="video" style="display: none" src="cutnew.mp4" autoplay muted ></video>
         </span>
       </a>
                     <!--Bouton hamburger avec animation-->
@@ -60,8 +61,12 @@
         </ul>
       </div>
     </nav>
+    
                     <!--Contenu page d'acceuil (padding selon ecran)-->
     <div class="container-fluid p-0">
+        <video autoplay loop id="video-background" muted >
+            <source src="sky.mp4" type="video/mp4">
+          </video>
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
           <div class="my-auto">
               <!-- Image supplementaire Quand ecran mobile (option)
@@ -71,7 +76,7 @@
             <h1 class="mb-0">Marzougui
               <span class="text-primary">Omar</span>
             </h1>
-            <div class="subheading mb-5">Paris 19eme
+            <div id="mail" class="subheading mb-5">Paris 19eme
               <a href="mailto:marzouguiomar@hotmail.fr">Marzouguiomar@hotmail.fr</a>
             </div>
             <p class="lead mb-5">Hello, my name is Marzougui Omar, but you can call me Omar. I’m currently studying to become a master of web development. I enjoy coding and learning new stuffs about it. I hope to be, one day, a Dumbledore of progamming.
@@ -81,7 +86,7 @@
                 <img class="linkd" src="css/Image/LogoLkin.png" alt="Logo linkdin">
               </a>
               <a href="CVMarzougui.pdf" target="_blank" >
-                <img class="cv" src="css/Image/LogoCv.png" alt="Logo CV">
+                <img class="cv" src="css/Image/Logocvcv.png" alt="Logo CV">
               </a>
             </div>
           </div>
