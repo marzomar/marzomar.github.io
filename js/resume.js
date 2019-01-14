@@ -6,16 +6,53 @@
   });
 })(jQuery); // End of use strict
 
-var v = document.getElementById("video");
-var p = document.getElementById('image')
+var v = document.getElementById("video-theme");
+var vt = document.getElementById("videot")
+var p = document.getElementById('dumb')
+var vb = document.getElementById('video-background')
+var b = document.getElementById('page-top')
 
-/* v.addEventListener('play', function(){
-  document.getElementsByTagName("body").style.overflow = 'hidden';
-}) */
+/* Modification apres click */
+/* function image() {
+  v.style.display='block';
+  p.setAttribute("src","css/Image/voldemort.jpg")
+  vb.setAttribute("src","darkcin.mp4")
+} */
+ /* Parametre video background */
+ vt.addEventListener('playing', function(){
+  b.style.overflow = 'hidden';
+}) 
 
-v.addEventListener('ended', function(){
+vt.addEventListener('ended', function(){
   v.style.display = 'none';
-  v.load(); 
-}, false);
+  b.style.overflow = "";
+}, true);
+/* Checkbox function */
+function image(){
+  var checkbox = document.getElementById('check');
+  v.style.display='block';
+if (checkbox.checked != true){
+  p.setAttribute("src","css/Image/voldemort.jpg");
+  vb.setAttribute("src","darkcin.mp4");
+  vt.setAttribute("src","cutnew.mp4");
+  b.classList.add("volde");
+}
+else {
+  p.setAttribute("src","css/Image/dumbledore2.jpg");
+  vb.setAttribute("src","sky.mp4");
+  vt.setAttribute("src","voldcut.mp4");
+  b.classList.remove("volde");
+  }
+  
+}
 
+/* function image() {
+  var element = document.getElementById("page-top");
+  
+} */
 
+/* function image() {
+  var body = document.getElementById("page-top");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+} */

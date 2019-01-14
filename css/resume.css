@@ -6,7 +6,7 @@ html {
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #868e96;
+  color: #61625F;
 }
 /* Modifie le padding pour les grands ecrans*/
 @media (min-width: 992px) {
@@ -22,8 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
+  font-family: "Dosis", sans-serif !important;
   text-transform: uppercase;
   color: #343a40;
 }
@@ -57,11 +56,12 @@ p.lead {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  opacity: 1;
 }
 /* Nav bar Vertical style pour grand ecran*/
 @media (min-width: 992px) {
   #sideNav {
-    text-align: center;
+    /* text-align: center; */
     position: fixed;
     top: 0;
     left: 0;
@@ -72,8 +72,9 @@ p.lead {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 17rem;
+    width: 9rem;
     height: 100vh;
+    opacity: 0.7;
   }
   #sideNav .navbar-brand {
     display: -webkit-box;
@@ -125,6 +126,13 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
+#about,
+#education,
+#skills,
+#interests {
+  height: 100vh;
+}
+
 /*Style pour les differentes sections (Format tablette)*/
 @media (min-width: 768px) {
   section.resume-section {
@@ -143,11 +151,12 @@ section.resume-section .resume-item .resume-date {
 }
 /*Couleurs pour le textes*/
 .bg-primary {
-  background-color: #009666 !important;
+  background: #61625F !important;
 }
 
+
 .text-primary {
-  color: #009666 !important;
+  color: #6fb1eb !important;
 }
 
 a {
@@ -209,12 +218,17 @@ a:hover, a:focus, a:active {
   transform: rotate(-45deg) translate(4px, -4px);
   transition: ease all .6s;
 }
+
 /*Style Image galerie*/
 
 @media (max-width:400px) {
 .imageprojet {
   display: none;
-}
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 5.5rem;
+  }
 }
 .imageprojet {
   filter: gray; /* IE6-9 */
@@ -238,30 +252,171 @@ a:hover, a:focus, a:active {
   width: 50px;
 }
 
-/*--------------*/
-
-#video {
-  position: fixed; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: 3;
-  background-size: contain;
+/*-----taille video plein ecran---------*/
+/* @media (max-width:450px) {
+  #video {
+    position: fixed; right: 0; bottom: 0; top: -170px;
+    min-width: 100%; min-height: 100%;
+    width: 100%; height: 100%; z-index: 5000;
+    background-size: contain;
+  }
 }
-#video-background {
-  /*  making the video fullscreen  */
+@media (min-width: 992px) {
+  #video {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: 5000;
+    background-size: contain;
+  }
+} */
+
+ /*  making the video fullscreen  */
+/* #video-background { 
     position: absolute;
     right: 0; 
     bottom: 0;
+    left: 0;
     min-width: 100%; 
     min-height: 100%;
     width: auto; 
     height: auto;
     z-index: -100;
   }
+   */
   body {
     overflow-x: hidden;
   }
-  h1 {text-align: center}
-
-  #mail {
-    text-align: center;
+  #check{
+    opacity: 0;
   }
+
+  /* Style pour page voldemort */   
+
+  body.volde 
+  .text-primary {
+    color:#c77133c7 !important;
+  }
+  body.volde 
+  .bg-primary {
+    background-color: #c74b33!important;
+  }
+  body.volde {
+    color: #F8F6F6 !important;
+  }
+body.volde h1,
+body.volde h2,
+body.volde h3,
+body.volde h4,
+body.volde h5,
+body.volde h6{
+  color: #c79633 !important;
+}
+/*   test video background */
+
+#video-fond {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+#video-fond > video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* 1. Pas de support d'object-fit */
+@media (min-aspect-ratio: 16/9) {
+  #video-fond > video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video-fond > video {
+    width: 300%;
+    left: -100%;
+  }
+}
+/* 2. En cas de support d'object-fit, écrase le 1 */
+@supports (object-fit: cover) {
+  #video-fond > video {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+/* test video theme  */
+#video-theme {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+#video-theme > video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* 1. Pas de support d'object-fit */
+@media (min-aspect-ratio: 16/9) {
+  #video-theme > video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video-theme > video {
+    width: 300%;
+    left: -100%;
+  }
+}
+/* 2. En cas de support d'object-fit, écrase le 1 */
+@supports (object-fit: cover) {
+  #video-theme > video {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+/* effet d 'ecriture' seulement en CSS */
+.typewriter {
+  width: 120px;
+}
+.typewriter p {
+  color: #fff;
+  font-family: "Dosis" !important;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end 25;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}

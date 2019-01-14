@@ -8,11 +8,13 @@
       <!-- Bootstrap CSS -->
       <link href="bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
       <!-- Fonts and police -->
+      <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
       <!-- Style du site -->
       <link href="css/resume.css" rel="stylesheet" media="screen">
       <link rel="stylesheet" type="text/css" href="css/impression.css" media="print">
+      <link rel="shortcut icon" href="css/Image/MO_LOGO_BLACK.jpg" type="image/jpg">
   </head>
                     <!--Debut body avec fonction scrollSpy-->
   <body id="page-top" data-spy="scroll" data-target="#sideNav">
@@ -20,11 +22,17 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
                     <!--Ecran Small-->
-        <span class="d-block d-lg-none">Marzougui Omar</span>
+        <span class="d-block d-lg-none">
+          <label for="check" onclick="image()" >
+            <img width="40px" src="css/Image/mo_logo_02.png" alt=""></label>
+          </span>
                     <!--Ecran Large-->
         <span class="d-none d-lg-block">
-          <img id="dumb" class="img-fluid img-profile rounded-circle mx-auto mb-2" onclick="document.getElementById('video').style.display='block';" src="css/Image/dumbledore2.jpg" alt="Image de dumbledore">
-          <video id="video" style="display: none" src="cutnew.mp4" autoplay muted ></video>
+          <div class="typewriter">
+          <p>Click here!</p>
+        </div>
+          <input type="checkbox" name="" id="check">
+          <label for="check"> <img id="dumb" class="img-fluid img-profile rounded-circle mx-auto mb-2" onclick="image()" src="css/Image/dumbledore2.jpg" alt="Image de dumbledore"></label>
         </span>
       </a>
                     <!--Bouton hamburger avec animation-->
@@ -38,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
@@ -64,9 +72,7 @@
     
                     <!--Contenu page d'acceuil (padding selon ecran)-->
     <div class="container-fluid p-0">
-        <video autoplay loop id="video-background" muted >
-            <source src="sky.mp4" type="video/mp4">
-          </video>
+        <!-- </div> -->
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
           <div class="my-auto">
               <!-- Image supplementaire Quand ecran mobile (option)
@@ -74,8 +80,9 @@
                   <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="css/dumbledore.jpg" alt="">
                 </span>-->
             <h1 class="mb-0">Marzougui
-              <span class="text-primary">Omar</span>
+              <span id="tit" class="text-primary">Omar</span>
             </h1>
+            <h3 class="mb-O">Developpeur web junior.</h3>
             <div id="mail" class="subheading mb-5">Paris 19eme
               <a href="mailto:marzouguiomar@hotmail.fr">Marzouguiomar@hotmail.fr</a>
             </div>
@@ -296,6 +303,16 @@
         </div>
       </footer>
     </div>
+    <div id="video-fond">
+        <video autoplay loop id="video-background" muted >
+          <source src="sky.mp4" type="video/mp4" >
+        </video>
+        </div>
+        <div id="video-theme" style="display: none">
+        <video id="videot"  src="cutnew.mp4" autoplay muted ></video>
+        </div>
+    
+             
 
   <!-- Bootstrap core JavaScript -->
     <script src="bootstrap/jquery/jquery.min.js"></script>
