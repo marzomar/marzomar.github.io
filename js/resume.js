@@ -27,23 +27,31 @@ vt.addEventListener('ended', function(){
   v.style.display = 'none';
   b.style.overflow = "";
 }, true);
+
 /* Checkbox function */
 function image(){
+
   var checkbox = document.getElementById('check');
-  v.style.display='block';
-if (checkbox.checked != true){
-  p.setAttribute("src","css/Image/voldemort.jpg");
-  vb.setAttribute("src","darkcin.mp4");
-  vt.setAttribute("src","cutnew.mp4");
-  b.classList.add("volde");
-}
-else {
-  p.setAttribute("src","css/Image/dumbledore2.jpg");
-  vb.setAttribute("src","sky.mp4");
-  vt.setAttribute("src","voldcut.mp4");
-  b.classList.remove("volde");
-  }
-  
+
+
+    if (checkbox.checked != true){
+      v.style.display='block';
+      setTimeout(function() {
+        p.setAttribute("src","css/Image/voldemort.jpg");
+        b.classList.add("volde");
+      }, 7000);
+      vb.setAttribute("src","darkcin.mp4");
+      vt.setAttribute("src","cutnew.mp4");
+    }
+    else {
+      v.style.display='block';
+      setTimeout(function() {
+        p.setAttribute("src","css/Image/dumbledore2.jpg");
+        b.classList.remove("volde");
+      }, 7000);
+      vb.setAttribute("src","sky.mp4");
+      vt.setAttribute("src","voldcut.mp4");
+      }
 }
 
 /* function image() {
