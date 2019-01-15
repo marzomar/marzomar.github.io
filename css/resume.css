@@ -7,6 +7,7 @@ body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #61625F;
+  overflow-x: hidden;
 }
 /* Modifie le padding pour les grands ecrans*/
 @media (min-width: 992px) {
@@ -153,16 +154,12 @@ section.resume-section .resume-item .resume-date {
 .bg-primary {
   background: #61625F !important;
 }
-
-
 .text-primary {
   color: #6fb1eb !important;
 }
-
 a {
   color: #BD5D38;
 }
-
 a:hover, a:focus, a:active {
   color: #824027;
 }
@@ -208,19 +205,15 @@ a:hover, a:focus, a:active {
   transform: rotate(45deg) translate(5px, 4px);
   transition: ease all .6s;
 }
-
 .navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
   opacity: 0;
   transition: ease all .6s;
 }
-
 .navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
   transform: rotate(-45deg) translate(4px, -4px);
   transition: ease all .6s;
 }
-
 /*Style Image galerie*/
-
 @media (max-width:400px) {
 .imageprojet {
   display: none;
@@ -243,7 +236,6 @@ a:hover, a:focus, a:active {
   filter: none; /* IE6-9 */
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
-
 /*Correction pour W3S Validator */
 .linkd {
   width: 50px;
@@ -251,58 +243,22 @@ a:hover, a:focus, a:active {
 .cv {
   width: 50px;
 }
-
-/*-----taille video plein ecran---------*/
-/* @media (max-width:450px) {
-  #video {
-    position: fixed; right: 0; bottom: 0; top: -170px;
-    min-width: 100%; min-height: 100%;
-    width: 100%; height: 100%; z-index: 5000;
-    background-size: contain;
-  }
+#check{
+  opacity: 0;
 }
-@media (min-width: 992px) {
-  #video {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: 5000;
-    background-size: contain;
-  }
-} */
+/* Style pour page voldemort */   
 
- /*  making the video fullscreen  */
-/* #video-background { 
-    position: absolute;
-    right: 0; 
-    bottom: 0;
-    left: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; 
-    height: auto;
-    z-index: -100;
-  }
-   */
-  body {
-    overflow-x: hidden;
-  }
-  #check{
-    opacity: 0;
-  }
-
-  /* Style pour page voldemort */   
-
-  body.volde 
-  .text-primary {
-    color:#c77133c7 !important;
-  }
-  body.volde 
-  .bg-primary {
-    background-color: #c74b33!important;
-  }
-  body.volde {
-    color: #F8F6F6 !important;
-  }
+body.volde 
+.text-primary {
+  color:#c77133c7 !important;
+}
+body.volde 
+.bg-primary {
+  background-color: #c74b33!important;
+}
+body.volde {
+  color: #F8F6F6 !important;
+}
 body.volde h1,
 body.volde h2,
 body.volde h3,
@@ -312,7 +268,6 @@ body.volde h6{
   color: #c79633 !important;
 }
 /*   test video background */
-
 #video-fond {
   overflow: hidden;
   position: fixed;
@@ -392,7 +347,6 @@ body.volde h6{
     object-fit: cover;
   }
 }
-
 /* effet d 'ecriture' seulement en CSS */
 .typewriter {
   width: 120px;
@@ -414,7 +368,6 @@ body.volde h6{
   from { width: 0 }
   to { width: 100% }
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
