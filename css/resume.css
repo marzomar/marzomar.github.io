@@ -133,13 +133,6 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
-#about,
-#education,
-#skills,
-#interests {
-  height: 100vh;
-}
-
 /*Style pour les differentes sections (Format tablette)*/
 @media (min-width: 768px) {
   section.resume-section {
@@ -359,6 +352,10 @@ body.volde h6{
     left: 0;
     object-fit: cover;
   }
+}
+/* Bouton stop video */
+#exitbtn {
+  z-index: 4;
 }
 /* effet d 'ecriture' seulement en CSS */
 .typewriter {
