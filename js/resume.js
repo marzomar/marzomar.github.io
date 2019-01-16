@@ -34,8 +34,8 @@ function image(){
         p.setAttribute("src","Image/voldemort.jpg");
         b.classList.add("volde");
         vb.setAttribute("src","video/darkcin.mp4");
-      }, 5000);
-      vt.setAttribute("src","video/cutnew.mp4");
+      }, 3000);
+      vt.setAttribute("src","video/dumb4s.mp4");
     }
     else {
       v.style.display='block';
@@ -44,9 +44,9 @@ function image(){
         setTimeout(function() {
           p.setAttribute("src","Image/dumbledore2.jpg");
           b.classList.remove("volde");
-          vb.setAttribute("src","video/sky.mp4");
+          vb.setAttribute("src","video/sky5s.mp4");
           }, 5000);
-        vt.setAttribute("src","video/voldcut.mp4");
+        vt.setAttribute("src","video/vold7s.mp4");
         }
     }
 
