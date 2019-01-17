@@ -16,3 +16,7 @@ for(i=0;i<bylineArr.length;i++){                                    // Loop for 
     byline.appendChild(span);                   // Add the span to the h2
   }
 }
+
+setTimeout(function () {
+  window.location.href = "../index.html";
+}, 9500);
