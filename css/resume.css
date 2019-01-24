@@ -2,6 +2,10 @@
   font-family:"Starjedi";
   src: url("Starjedi.ttf") format("truetype");
 }
+@font-face {
+  font-family:"Harry";
+  src: url("Harry.ttf") format("truetype");
+}
 
 
 /* Permet un defilement plus doux */
@@ -156,11 +160,18 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
   color: #6fb1eb !important;
 }
+#tity {
+  color: #bfc178 !important;
+}
 a {
   color: #6FB1EB;
 }
 #comstar{
   font-family: "Starjedi";
+  text-align: center
+}
+#comstar1{
+  font-family: "Harry";
   text-align: center
 }
 a:hover, a:focus, a:active {
@@ -313,7 +324,7 @@ body.volde h6{
     object-fit: cover;
   }
 }
-/* test video theme  */
+/* video theme  */
 #video-theme {
   overflow: hidden;
   position: fixed;
@@ -358,28 +369,322 @@ body.volde h6{
   z-index: 4;
 }
 /* effet d 'ecriture' seulement en CSS */
-.typewriter {
+/* .typewriter {
   width: 120px;
 }
 .typewriter p {
   color: #fff;
   font-family: "Dosis" !important;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden;  Ensures the content is not revealed until the animation 
+  border-right: .15em solid orange;  The typwriter cursor 
+  white-space: nowrap;  Keeps the content on a single line 
+  margin: 0; Gives that scrolling effect as the typing happens 
+  letter-spacing: .15em;  Adjust as needed 
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end 25;
-}
+} */
 /* The typing effect */
-@keyframes typing {
+/* @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
+} */
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/* @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
+} */
+
+/* test image effet glitch */
+/* .button:before {
+  content: "";
+  opacity: 0;
+}
+.button:hover {
+  -webkit-animation: glitch 750ms infinite;
+}
+.button:hover:before {
+  opacity: 1;
+}
+.button:hover:after {
+  -webkit-animation: scan 2s infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes glitch {
+  0% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+  5% {
+    -moz-transform: skewX(2deg);
+    -ms-transform: skewX(2deg);
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+    opacity: 0.75;
+  }
+  10% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  15% {
+    -moz-transform: skewX(-5deg);
+    -ms-transform: skewX(-5deg);
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 0.75;
+  }
+  20% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  45% {
+    -moz-transform: skewX(3deg);
+    -ms-transform: skewX(3deg);
+    -webkit-transform: skewX(3deg);
+    transform: skewX(3deg);
+    opacity: 0.75;
+  }
+  50% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  55% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 0.75;
+  }
+  60% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  75% {
+    -moz-transform: skewX(2deg);
+    -ms-transform: skewX(2deg);
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+  }
+  80% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+  85% {
+    -moz-transform: skewX(-8deg);
+    -ms-transform: skewX(-8deg);
+    -webkit-transform: skewX(-8deg);
+    transform: skewX(-8deg);
+    opacity: 0.75;
+  }
+  90% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+}
+@-webkit-keyframes scan {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 97%;
+  }
+  100% {
+    top: 0%;
+  }
+} */
+/* 
+fleche et animationn */
+
+@keyframes down{
+	0% {position:relative; top:0px; opacity: 0}
+	50% {position:relative; top:15px; opacity: 0.5}
+	100% {position:relative; top:30px; opacity: 1}
+
+}
+
+.fleche{
+	animation: down 1s infinite linear alternate;
+  width: 50px;
+  margin-bottom: 20px;
+  left: 83px
+}
+
+/* .fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+} */
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+  top: -80px;
+}
+
+.crawl {
+  position: relative;
+  top: 99999px;
+  transform-origin: 50% 100%;
+  animation: crawl 30s ease-out;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+	0% {
+    top: -100px;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+	100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+/* Effet pulse sur image */
+ #dumb:hover {
+box-shadow: 0 0 0 rgba(10, 10, 8, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(10, 10, 9, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(5, 5, 4, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(5, 5, 4, 0.4);
+    box-shadow: 0 0 0 0 rgba(10, 10, 8, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(5, 5, 4, 0);
+      box-shadow: 0 0 0 20px rgba(7, 7, 6, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(7, 7, 6, 0);
+      box-shadow: 0 0 0 0 rgba(5, 5, 4, 0);
+  }
+}
+ 
+
+ /* Test logo pulse  */
+
+ #dumb {
+   cursor: pointer;
+   animation:heartbeat 1.5s ease-in-out infinite both;
+  }
+
+@keyframes heartbeat {
+  from {
+    transform:scale(1);
+    transform-origin:center center;
+    animation-timing-function:ease-out
+  }
+  10%{
+    transform:scale(.91);
+    animation-timing-function:ease-in
+  }
+  17%{
+    transform:scale(.98);
+    animation-timing-function:ease-out
+  }
+  33%
+  {transform:scale(.87);
+    animation-timing-function:ease-in
+  }
+  45%{
+    transform:scale(1);
+    animation-timing-function:ease-out
+  }
+}
+
+/* test animation video fullscreen */
+  #video-theme {
+    -webkit-animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .close {
+    font-size: 20px;   
+    position: absolute;
+    top: 5px; right: 5px;
+    z-index: 4;
+    color: whitesmoke
 }

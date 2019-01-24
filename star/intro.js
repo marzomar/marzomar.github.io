@@ -17,6 +17,21 @@ for(i=0;i<bylineArr.length;i++){                                    // Loop for 
   }
 }
 
+var text = document.getElementById("sw")
+var anime = document.getElementById("cr")
+var logo = document.getElementById("sd")
+var sound = document.getElementById("sound");
+sound.volume = 0.6;
+
+
 setTimeout(function () {
-  window.location.href = "../index.html";
-}, 9500);
+  window.location.href = "pageyoda.html";
+}, 26000);
+
+setTimeout(() => {
+  logo.style.display= "none";
+  text.style.display= "block";
+  text.classList.add("star-wars");
+  anime.classList.add("crawl");
+}, 6700);
+
