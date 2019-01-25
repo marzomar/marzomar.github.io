@@ -1,0 +1,45 @@
+body {
+    color: bisque
+}
+
+.bg-primary {
+    background: darkolivegreen !important;
+  }
+  .text-primary {
+    color: darkkhaki !important;
+  }
+  a {
+    color: sandybrown;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: olive !important;
+  }
+  
+body.volde {
+    color: #F8F6F6 !important;
+  }
+  body.volde 
+  .text-primary {
+    color: firebrick !important;
+  }
+  body.volde 
+  .bg-primary {
+    background-color: firebrick !important;
+  }
+  body.volde
+  a {
+    color: firebrick;
+  }
+  body.volde h1,
+  body.volde h2,
+  body.volde h3,
+  body.volde h4,
+  body.volde h5,
+  body.volde h6{
+    color: gainsboro !important;
+  }

@@ -160,9 +160,6 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
   color: #6fb1eb !important;
 }
-#tity {
-  color: #bfc178 !important;
-}
 a {
   color: #6FB1EB;
 }
@@ -688,3 +685,4 @@ box-shadow: 0 0 0 rgba(10, 10, 8, 0.4);
     z-index: 4;
     color: whitesmoke
 }
+
