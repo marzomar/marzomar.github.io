@@ -12,6 +12,8 @@ var vt = document.getElementById("videot")
 var ex = document.getElementById("exitbtn")
 var p = document.getElementById('dumb')
 var vb = document.getElementById('video-background')
+var lgc = document.getElementById('logocv')
+var lgg = document.getElementById('logogit')
 var b = document.getElementById('page-top')
 var checkbox = document.getElementById('check');
 var screencheck = window.matchMedia("(min-width: 800px)");
@@ -40,6 +42,8 @@ function image(){
           vb.setAttribute("poster","Image/videofondphoto2.png");
           vb.setAttribute("src","video/darkcin.mp4");
           p.setAttribute("src","Image/voldemort.jpg");
+          lgc.setAttribute("src","Image/Logocvcv2.png");
+          lgg.setAttribute("src","Image/LogoGithub2.png");
         }, 3000);
         vt.setAttribute("src","video/dumb4s.mp4");
     }
@@ -52,6 +56,8 @@ function image(){
           vb.setAttribute("poster","Image/videofondphoto1.png");
           vb.setAttribute("src","video/sky5s.mp4");
           p.setAttribute("src","Image/dumbledore2.jpg");
+          lgc.setAttribute("src","Image/Logocvcv.png");
+          lgg.setAttribute("src","Image/LogoGithub.png");
           }, 5000);
         vt.setAttribute("src","video/vold7s.mp4");
         }

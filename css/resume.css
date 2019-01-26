@@ -254,6 +254,9 @@ a:hover, a:focus, a:active {
 .cv {
   width: 50px;
 }
+#logogit {
+  width: 50px;
+}
 #check{
   opacity: 0;
 }

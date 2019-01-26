@@ -12,6 +12,8 @@
   var ex = document.getElementById("exitbtn")
   var p = document.getElementById('dumb')
   var vb = document.getElementById('video-background')
+  var lgc = document.getElementById('logocv')
+  var lgg = document.getElementById('logogit')
   var b = document.getElementById('page-top')
   var checkbox = document.getElementById('check');
   var screencheck = window.matchMedia("(min-width: 800px)");
@@ -39,9 +41,11 @@
           });
           setTimeout(function (){
             b.classList.add("volde");
-            vb.setAttribute("poster","media/videofondphoto4.png")
             vb.setAttribute("src","mediayoda/backsid.mp4");
+            vb.setAttribute("poster","mediayoda/videofondphoto42.jpg")
             p.setAttribute("src","mediayoda/Sidious.jpg");
+            lgc.setAttribute("src","../Image/Logocvcv2.png");
+            lgg.setAttribute("src","../Image/LogoGithub2.png");
           }, 3000);
           vt.setAttribute("src","mediayoda/videoyod.mp4");
       }
@@ -52,8 +56,10 @@
           setTimeout(function() {
             b.classList.remove("volde");
             p.setAttribute("src","mediayoda/yodap.jpeg");
-            vb.setAttribute("poster","media/videofondphoto3.png")
+            vb.setAttribute("poster","mediayoda/videofondphoto3.png")
             vb.setAttribute("src","mediayoda/backyod.mp4");
+            lgc.setAttribute("src","../Image/Logocvcv.png");
+            lgg.setAttribute("src","../Image/LogoGithub.png");
             }, 5000);
           vt.setAttribute("src","mediayoda/videosid.mp4");
           }
