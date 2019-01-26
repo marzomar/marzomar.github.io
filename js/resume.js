@@ -36,9 +36,10 @@ function image(){
         setTimeout(function() {
           vt.play()});
         setTimeout(function (){
-          p.setAttribute("src","Image/voldemort.jpg");
           b.classList.add("volde");
+          vb.setAttribute("poster","Image/videofondphoto2.png");
           vb.setAttribute("src","video/darkcin.mp4");
+          p.setAttribute("src","Image/voldemort.jpg");
         }, 3000);
         vt.setAttribute("src","video/dumb4s.mp4");
     }
@@ -47,9 +48,10 @@ function image(){
         setTimeout(function() {
           vt.play()});
         setTimeout(function() {
-          p.setAttribute("src","Image/dumbledore2.jpg");
           b.classList.remove("volde");
+          vb.setAttribute("poster","Image/videofondphoto1.png");
           vb.setAttribute("src","video/sky5s.mp4");
+          p.setAttribute("src","Image/dumbledore2.jpg");
           }, 5000);
         vt.setAttribute("src","video/vold7s.mp4");
         }

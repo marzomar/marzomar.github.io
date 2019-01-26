@@ -15,6 +15,7 @@
   var b = document.getElementById('page-top')
   var checkbox = document.getElementById('check');
   var screencheck = window.matchMedia("(min-width: 800px)");
+
   
   /* Parametre video background */
    vt.addEventListener('playing', function(){
@@ -34,11 +35,13 @@
       if (checkbox.checked != true){
         v.style.display='block';
           setTimeout(function() {
-            vt.play()});
+            vt.play();
+          });
           setTimeout(function (){
-            p.setAttribute("src","mediayoda/Sidious.jpg");
             b.classList.add("volde");
+            vb.setAttribute("poster","media/videofondphoto4.png")
             vb.setAttribute("src","mediayoda/backsid.mp4");
+            p.setAttribute("src","mediayoda/Sidious.jpg");
           }, 3000);
           vt.setAttribute("src","mediayoda/videoyod.mp4");
       }
@@ -47,13 +50,20 @@
           setTimeout(function() {
             vt.play()});
           setTimeout(function() {
-            p.setAttribute("src","mediayoda/yodap.jpeg");
             b.classList.remove("volde");
+            p.setAttribute("src","mediayoda/yodap.jpeg");
+            vb.setAttribute("poster","media/videofondphoto3.png")
             vb.setAttribute("src","mediayoda/backyod.mp4");
             }, 5000);
           vt.setAttribute("src","mediayoda/videosid.mp4");
           }
       }
+
+
+
+
+
+
   /*   function qui permet de ne pas lancer l'autoplay de la video en background
    sur les devices de moins de 600pixels de largeurs 
    (permet de ne pas utiliser trop de data sur portables) */
@@ -61,7 +71,9 @@
         var screenWidth = $(window).width();
         if (screenWidth < 600){
               $('video').removeAttr('autoplay');
+              $('videot').removeAttr('src');
         } else {
           $('video').attr('autoplay');
+          $('videot').attr('src');
         }
       });
