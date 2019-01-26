@@ -54,6 +54,7 @@
     background-repeat: no-repeat
   } */
   html { 
+    height: 100%;
     margin:0;
     padding:0;
     background: url(fond.jpg) no-repeat center fixed; 

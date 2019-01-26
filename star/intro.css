@@ -93,6 +93,7 @@
   
   /* General styles and layout */
   html { 
+    height: 100%;
     margin:0;
     padding:0;
     background: url(bg.jpg) no-repeat center fixed; 
