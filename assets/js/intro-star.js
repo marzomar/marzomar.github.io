@@ -25,7 +25,7 @@ sound.volume = 0.6;
 
 
 setTimeout(function () {
-  window.location.href = "../../modeStar/modeStar.html";
+  window.location.href = "../modeStar/modeStar.html";
 }, 26000);
 
 setTimeout(() => {
