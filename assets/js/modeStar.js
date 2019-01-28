@@ -41,13 +41,13 @@
           });
           setTimeout(function (){
             b.classList.add("volde");
-            vb.setAttribute("src","mediayoda/backsid.mp4");
-            vb.setAttribute("poster","mediayoda/videofondphoto42.jpg")
-            p.setAttribute("src","mediayoda/Sidious.jpg");
-            lgc.setAttribute("src","../Image/Logocvcv2.png");
-            lgg.setAttribute("src","../Image/LogoGithub2.png");
+            vb.setAttribute("src","../assets/video/backsid.mp4");
+            vb.setAttribute("poster","../assets/image/videofondphoto42.jpg")
+            p.setAttribute("src","../assets/image/Sidious.jpg");
+            lgc.setAttribute("src","../assets/image/Logocvcv2.png");
+            lgg.setAttribute("src","../assets/image/LogoGithub2.png");
           }, 3000);
-          vt.setAttribute("src","mediayoda/videoyod.mp4");
+          vt.setAttribute("src","../assets/video/videoyod.mp4");
       }
       else {
         v.style.display='block';
@@ -55,13 +55,13 @@
             vt.play()});
           setTimeout(function() {
             b.classList.remove("volde");
-            p.setAttribute("src","mediayoda/yodap.jpeg");
-            vb.setAttribute("poster","mediayoda/videofondphoto3.png")
-            vb.setAttribute("src","mediayoda/backyod.mp4");
-            lgc.setAttribute("src","../Image/Logocvcv.png");
-            lgg.setAttribute("src","../Image/LogoGithub.png");
+            p.setAttribute("src","../assets/image/yodap.jpeg");
+            vb.setAttribute("poster","../assets/image/videofondphoto3.png")
+            vb.setAttribute("src","../assets/video/backyod.mp4");
+            lgc.setAttribute("src","../assets/image/Logocvcv.png");
+            lgg.setAttribute("src","../assets/image/LogoGithub.png");
             }, 5000);
-          vt.setAttribute("src","mediayoda/videosid.mp4");
+          vt.setAttribute("src","../assets/video/videosid.mp4");
           }
       }
 

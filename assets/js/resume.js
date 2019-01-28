@@ -39,13 +39,13 @@ function image(){
           vt.play()});
         setTimeout(function (){
           b.classList.add("volde");
-          vb.setAttribute("poster","Image/videofondphoto2.png");
-          vb.setAttribute("src","video/darkcin.mp4");
-          p.setAttribute("src","Image/voldemort.jpg");
-          lgc.setAttribute("src","Image/Logocvcv2.png");
-          lgg.setAttribute("src","Image/LogoGithub2.png");
+          vb.setAttribute("poster","assets/image/videofondphoto2.png");
+          vb.setAttribute("src","assets/video/darkcin.mp4");
+          p.setAttribute("src","assets/image/voldemort.jpg");
+          lgc.setAttribute("src","assets/image/Logocvcv2.png");
+          lgg.setAttribute("src","assets/image/LogoGithub2.png");
         }, 3000);
-        vt.setAttribute("src","video/dumb4s.mp4");
+        vt.setAttribute("src","assets/video/dumb4s.mp4");
     }
     else {
       v.style.display='block';
@@ -53,13 +53,13 @@ function image(){
           vt.play()});
         setTimeout(function() {
           b.classList.remove("volde");
-          vb.setAttribute("poster","Image/videofondphoto1.png");
-          vb.setAttribute("src","video/sky5s.mp4");
-          p.setAttribute("src","Image/dumbledore2.jpg");
-          lgc.setAttribute("src","Image/Logocvcv.png");
-          lgg.setAttribute("src","Image/LogoGithub.png");
+          vb.setAttribute("poster","assets/image/videofondphoto1.png");
+          vb.setAttribute("src","assets/video/sky5s.mp4");
+          p.setAttribute("src","assets/image/dumbledore2.jpg");
+          lgc.setAttribute("src","assets/image/Logocvcv.png");
+          lgg.setAttribute("src","assets/image/LogoGithub.png");
           }, 5000);
-        vt.setAttribute("src","video/vold7s.mp4");
+        vt.setAttribute("src","assets/video/vold7s.mp4");
         }
     }
 /*   function qui permet de ne pas lancer l'autoplay de la video en background

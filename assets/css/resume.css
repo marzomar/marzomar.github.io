@@ -1,10 +1,10 @@
 @font-face {
   font-family:"Starjedi";
-  src: url("Starjedi.ttf") format("truetype");
+  src: url("../font/Starjedi.ttf") format("truetype");
 }
 @font-face {
   font-family:"Harry";
-  src: url("Harry.ttf") format("truetype");
+  src: url("../font/Harry.ttf") format("truetype");
 }
 
 

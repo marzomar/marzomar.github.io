@@ -1,89 +1,44 @@
 @font-face {
-  font-family:"Starjedi";
-  src: url("../css/Starjedi.ttf") format("truetype");
+  font-family:"Harry";
+  src: url("../font/Harry.ttf") format("truetype");
 }
+
 .star {
-    animation: star 7s ease-out;
-  }
-  .wars {
-    animation: wars 7s ease-out;
-  }
-  .byline span {
-    animation: spin-letters 7s linear;
-  }
-  .byline {
-    animation: move-byline 7s linear;
+    animation: star 15s ease-in-out;
   }
   a {
     font-size: 30px;
     -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-color: rgb(155, 153, 125);
     text-decoration: none;
-    font-family: Starjedi;
-
+    font-family: Harry;
   }
   
+  /* Keyframes */
   @keyframes star {
     0% {
       opacity: 0;
-      transform: scale(1.5) translateY(-0.75em);
+      transform: scale(1) translateZ(-100em);
     }
     20% {
       opacity: 1;
+      transform: scale(1)
     }
+    /*50% {
+      opacity: 1;
+      transform: scale(1) translateZ(50em) 
+    }
+
     89% {
       opacity: 1;
-      transform: scale(1);
-    }
+      transform: scale(1) translateZ(70em) 
+    } */
     100% {
       opacity: 0;
-      transform: translateZ(-1000em);
+      transform: translateZ(200em);
     }
   }
-  
-  @keyframes wars {
-    0% {
-      opacity: 0;
-      transform: scale(1.5) translateY(0.5em);
-    }
-    20% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: translateZ(-1000em);
-    }
-  }
-  
-  @keyframes spin-letters {
-    0%, 10% {
-      opacity: 0;
-      transform: rotateY(90deg);
-    }
-    30% {
-      opacity: 1;
-    }
-    70%, 86% {
-      transform: rotateY(0);
-      opacity: 1;
-    }
-    95%, 100% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes move-byline {
-    0% {
-      transform: translateZ(5em);
-    }
-    100% {
-      transform: translateZ(0);
-    }
-  }
+
   
   /* Make the 3D work on the container */
   .starwars-demo {
@@ -92,11 +47,17 @@
   }
   
   /* General styles and layout */
+/*   body {
+    background: #000 url(fond.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat
+  } */
   html { 
     height: 100%;
     margin:0;
     padding:0;
-    background: url(bg.jpg) no-repeat center fixed; 
+    background: url(../image/fondIntroH.jpg) no-repeat center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -112,15 +73,12 @@
     width: 34em;
   }
   
-  .byline span {
-    display: inline-block;
-  }
   
   img {
     width: 100%;
   }
   
-  .star, .wars, .byline {
+  .star {
     position: absolute;
   }
   
@@ -128,21 +86,6 @@
     top: -1em;
   }
   
-  .wars {
-    bottom: -1em;
-  }
-  
-  .byline {
-    color: #fff;
-    font-family: "ITC Serif Gothic", Lato;
-    font-size: 2.25em;
-    left: -2em;
-    letter-spacing: 0.4em;
-    right: -2em;
-    text-align: center;
-    text-transform: uppercase;
-    top: 29%;
-  }
   
   /*** Media queries for adjusting to different screen sizes ***/
   
@@ -157,7 +100,7 @@
       font-size: 7px;
     }
   }
-  .star-wars {
+ /*  .star-wars {
     display: flex;
     justify-content: center;
     position: relative;
@@ -171,9 +114,9 @@
     perspective: 400px;
     text-align: justify;
     top: 250px;
-  }
+  } */
   
-  .crawl {
+ /*  .crawl {
     position: relative;
     top: 99999px;
     transform-origin: 50% 100%;
@@ -199,8 +142,8 @@
       top: -6000px;
       transform: rotateX(25deg) translateZ(-2500px);
     }
-  }
+  } */
 
-  body {
+   body {
     overflow: hidden;
   }
