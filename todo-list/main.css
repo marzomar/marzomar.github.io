@@ -1,0 +1,333 @@
+body {
+    background: url(2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#app {
+    display:flex;
+    justify-content: space-around;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.border {
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 10px;
+}
+                        /* Finished style */
+.finished {
+    background-color : grey;
+    color : lightgray;
+}
+
+.finished * {
+    display:none;
+}
+
+.finished h2, .finished input {
+    display:block;
+}
+
+.finished h2::after {
+    content: " (A faire !)"
+}
+                        /* Blackboard style */
+.blackboard {
+    position: relative;
+    width: 400px;
+    margin: 1% auto;
+    border: tan solid 12px;
+    border-top: #bda27e solid 12px;
+    border-left: #b19876 solid 12px;
+    border-bottom: #c9ad86 solid 12px;
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+    background-color: #333;
+}
+
+.blackboard:before {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+    border: #2c2c2c solid 2px;
+    content: "TODO list";
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.2em;
+    color: rgba(238, 238, 238, 0.7);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form {
+    padding: 70px 20px 20px;
+}
+
+p {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+label {
+    vertical-align: middle;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6em;
+    color: black;
+}
+
+p:nth-of-type(5) > label {
+    vertical-align: top;
+}
+
+input,
+textarea {
+    vertical-align: middle;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6em;
+    color: rgba(238, 238, 238, 0.8);
+    line-height: .6em;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    font-size: 1.4em;
+    line-height: 1em;
+    resize: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    color: rgba(238, 238, 238, 0.7);
+    line-height: 1em;
+    padding: 0;
+}
+
+input[type="submit"]:focus {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(238, 238, 238, 0.2);
+}
+
+::-moz-selection {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(238, 238, 238, 0.2);
+    text-shadow: none;
+}
+
+::selection {
+    background: rgba(238, 238, 238, 0.4);
+    color: rgba(238, 238, 238, 0.3);
+    text-shadow: none;
+}
+
+                        /* Style Post-it */
+  
+  .note {
+	-webkit-animation: bounce-in-bck 1.1s both;
+	        animation: bounce-in-bck 1.1s both;
+}
+
+ @-webkit-keyframes bounce-in-bck {
+    0% {
+      -webkit-transform: scale(7);
+              transform: scale(7);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: scale(1.24);
+              transform: scale(1.24);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    89% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes bounce-in-bck {
+    0% {
+      -webkit-transform: scale(7);
+              transform: scale(7);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: scale(1.24);
+              transform: scale(1.24);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    89% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+  @import url(http://fonts.googleapis.com/css?family=Satisfy);
+
+.quote-container {
+    margin-top: 50px;
+    position: relative;
+  }
+  .note {
+    color: #333;
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Satisfy;
+    font-size: 15px;
+    box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+    margin-top: 30px;
+  }
+  .note .author {
+    display: block;
+    margin: 40px 0 0 0;
+    text-align: right;
+  }
+  .yellow {
+    background: #eae672;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  .pin {
+    background-color: #aaa;
+    display: block;
+    height: 32px;
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    top: -16px;
+    z-index: 1;
+  }
+  .pin:after {
+    background-color: #A31;
+    background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1),
+                inset 3px 3px 3px hsla(0,0%,100%,.2),
+                inset -3px -3px 3px hsla(0,0%,0%,.2),
+                23px 20px 3px hsla(0,0%,0%,.15);
+    content: '';
+    height: 12px;
+    left: -5px;
+    position: absolute;
+    top: -10px;
+    width: 12px;
+  }
+  .pin:before {
+    background-color: hsla(0,0%,0%,0.1);
+    box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+    content: '';
+  
+    height: 24px;
+    width: 2px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+  
+    transform: rotate(57.5deg);
+    -moz-transform: rotate(57.5deg);
+    -webkit-transform: rotate(57.5deg);
+    -o-transform: rotate(57.5deg);
+    -ms-transform: rotate(57.5deg);
+  
+    transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+  }

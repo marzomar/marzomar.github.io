@@ -396,7 +396,7 @@ body.volde h6{
 } */
 
 /* test image effet glitch */
-/* .button:before {
+ .button:before {
   content: "";
   opacity: 0;
 }
@@ -517,11 +517,11 @@ body.volde h6{
   100% {
     top: 0%;
   }
-} */
+} 
 /* 
 fleche et animationn */
 
-@keyframes down{
+/* @keyframes down{
 	0% {position:relative; top:0px; opacity: 0}
 	50% {position:relative; top:15px; opacity: 0.5}
 	100% {position:relative; top:30px; opacity: 1}
@@ -533,7 +533,7 @@ fleche et animationn */
   width: 50px;
   margin-bottom: 20px;
   left: 83px
-}
+} */
 
 /* .fade {
   position: relative;

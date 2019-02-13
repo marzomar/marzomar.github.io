@@ -65,6 +65,22 @@
           }
       }
 
+      /*   Permet de modifier la source image on/hover */
+  //Affecte la nouvelle image lorsque la souris survole l'élément
+  function passageDeLaSouris(element) {
+    if (checkbox.checked != true) {
+      element.setAttribute('src', "../assets/gif/yodaGif.gif");
+  } else {
+    element.setAttribute('src', "../assets/gif/sidiGif.gif");}
+  }
+  //Affecte l'image de départ lorsque la souris ne survole plus l'élément
+  function departDeLaSouris(element) {
+  if (checkbox.checked != true) {
+  element.setAttribute('src', "../assets/image/yoda.jpeg");
+  } else {
+    element.setAttribute('src', "../assets/image/Sidious.jpg");}
+  }
+
 
 
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToDo List - Vue.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> 
+    <link rel="stylesheet" type="text/css" media="screen" href="main1.css" /> 
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+</head>
+<body>
+    <div id="app">
+        <div class="blackboard">
+            <div class="form">
+                <form action="" v-on:submit.prevent="addToDo()">
+                    <p>
+                        <input type="text" name="title" v-model="title" placeholder="Title" />
+                    </p>
+                    <p>
+                        <input type="date" name="deadline" v-model="deadline" />
+                    </p>
+                    <p>
+                        <input type="text" yup.enter="addCategory()" v-model="newCategory" placeholder="Create Category" />
+                        <input type="button" v-on:click="addCategory()" value="+">
+                    </p>
+                    <p>
+                        <select name="category" v-model="category">
+                        <option v-for="cat in categories">{{ cat }}</option>
+                    </p>
+                    <p>
+                        <textarea name="content" id="" cols="23" rows="10" v-model="content" placeholder="Message"></textarea>
+                    </p>
+                    <p class="wipeout">
+                        <input type="submit" value="Ajouter Post-it"  />
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="todoList">
+            <todo v-for="t in displayTodos" v-bind:task="t" @remove="removeTodo($event)"></todo>
+        </div>
+        <div>
+            <label id="arch" for="showArchives">Liste tâches archivées</label>
+            <input type="checkbox" id="showArchives" v-model="showArchives"/>
+            <div class="archives" v-if="showArchives">
+                <todo v-for="t in archivedTodos" v-bind:task="t" @remove="removeTodo($event)"></todo>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

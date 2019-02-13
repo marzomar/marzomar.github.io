@@ -62,6 +62,22 @@ function image(){
         vt.setAttribute("src","assets/video/vold7s.mp4");
         }
     }
+
+  /*   Permet de modifier la source image on/hover */
+  //Affecte la nouvelle image lorsque la souris survole l'élément
+  function passageDeLaSouris(element) {
+    if (checkbox.checked != true) {
+      element.setAttribute('src', "assets/gif/dumbGif.gif");
+  } else {
+    element.setAttribute('src', "assets/gif/voldGif.gif");}
+  }
+  //Affecte l'image de départ lorsque la souris ne survole plus l'élément
+  function departDeLaSouris(element) {
+  if (checkbox.checked != true) {
+  element.setAttribute('src', "assets/image/dumbledore2.jpg");
+  } else {
+    element.setAttribute('src', "assets/image/voldemort.jpg");}
+  }
 /*   function qui permet de ne pas lancer l'autoplay de la video en background
  sur les devices de moins de 600pixels de largeurs 
  (permet de ne pas utiliser trop de data sur portables) */
