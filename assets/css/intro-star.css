@@ -2,6 +2,9 @@
   font-family:"Starjedi";
   src: url("../font/Starjedi.ttf") format("truetype");
 }
+body {
+  overflow: hidden;
+}
 .star {
     animation: star 7s ease-out;
   }
@@ -20,9 +23,7 @@
     -webkit-text-stroke-color: yellow;
     text-decoration: none;
     font-family: Starjedi;
-
   }
-  
   @keyframes star {
     0% {
       opacity: 0;
@@ -40,7 +41,6 @@
       transform: translateZ(-1000em);
     }
   }
-  
   @keyframes wars {
     0% {
       opacity: 0;
@@ -58,7 +58,6 @@
       transform: translateZ(-1000em);
     }
   }
-  
   @keyframes spin-letters {
     0%, 10% {
       opacity: 0;
@@ -75,7 +74,6 @@
       opacity: 0;
     }
   }
-  
   @keyframes move-byline {
     0% {
       transform: translateZ(5em);
@@ -84,13 +82,11 @@
       transform: translateZ(0);
     }
   }
-  
   /* Make the 3D work on the container */
   .starwars-demo {
     perspective: 800px;
     transform-style: preserve3d;
   }
-  
   /* General styles and layout */
   html { 
     height: 100%;
@@ -102,7 +98,6 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  
   .starwars-demo {
     height: 17em;
     left: 50%;
@@ -111,27 +106,21 @@
     transform: translate(-50%, -50%);
     width: 34em;
   }
-  
   .byline span {
     display: inline-block;
   }
-  
   img {
     width: 100%;
   }
-  
   .star, .wars, .byline {
     position: absolute;
   }
-  
   .star {
     top: -1em;
   }
-  
   .wars {
     bottom: -1em;
   }
-  
   .byline {
     color: #fff;
     font-family: "ITC Serif Gothic", Lato;
@@ -143,15 +132,12 @@
     text-transform: uppercase;
     top: 29%;
   }
-  
   /*** Media queries for adjusting to different screen sizes ***/
-  
   @media only screen and (max-width: 600px) {
     .starwars-demo {
       font-size: 10px;
     }
   }
-  
   @media only screen and (max-width: 480px) {
     .starwars-demo {
       font-size: 7px;
@@ -172,24 +158,20 @@
     text-align: justify;
     top: 250px;
   }
-  
   .crawl {
     position: relative;
     top: 99999px;
     transform-origin: 50% 100%;
     animation: crawl 30s ease-out;
   }
-  
   .crawl > .title {
     font-size: 90%;
     text-align: center;
   }
-  
   .crawl > .title h1 {
     margin: 0 0 100px;
     text-transform: uppercase;
   }
-  
   @keyframes crawl {
     0% {
       top: -100px;
@@ -199,8 +181,4 @@
       top: -6000px;
       transform: rotateX(25deg) translateZ(-2500px);
     }
-  }
-
-  body {
-    overflow: hidden;
   }

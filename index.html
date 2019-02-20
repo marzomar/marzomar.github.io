@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
                     <!--Ecran Small-->
-        <span class="d-block d-lg-none">
+        <span class="d-block d-lg-none" id="logoPort">
           <label for="check" onclick="image()" >
             <img width="40px" src="assets/image/mo_logo_02.png" alt="" id="navlogo"></label>
         </span>
@@ -322,11 +322,10 @@
     </div>
     <div id="video-theme" style="display: none">
       <video id="videot" muted preload="auto" src="assets/video/dumb4s.mp4" type="video/mp4" ></video>
-      <button class="close" onclick="document.getElementById('video-theme').style.display='none'">X</button>
+      <button class="close" onclick="document.getElementById('video-theme').style.display='none'">
+        <img id="exitbtn" src="assets/image/exitbtn.png" alt="">
+      </button>
     </div>
-    
-             
-
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/bootstrap/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -6,13 +6,10 @@
   font-family:"Harry";
   src: url("../font/Harry.ttf") format("truetype");
 }
-
-
 /* Permet un defilement plus doux */
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
@@ -37,32 +34,26 @@ h6 {
   text-transform: uppercase;
   color: #343a40;
 }
-
 h1 {
   font-size: 5rem;
   line-height: 5.5rem;
 }
-
 h2 {
   font-size: 3.5rem;
 }
-
 h3 {
   font-size: 2rem;
 }
-
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
 }
-
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
 }
-
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -132,11 +123,9 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
-
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
-
 /*Style pour les differentes sections (Format tablette)*/
 @media (min-width: 768px) {
   section.resume-section {
@@ -175,7 +164,6 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
               /*-----------------Menu Hamburger et animations*-----------------/
-
 /*Rend transparent le contour*/                               
 .navbar-toggler {
   border: none;
@@ -191,7 +179,6 @@ a:hover, a:focus, a:active {
   transform: rotate(0deg) translate(0px, 0px);
   transition: ease all .6s;
 }
-
 .navbar-toggler .icon-bar {
   display: block;
   width: 22px;
@@ -242,7 +229,6 @@ a:hover, a:focus, a:active {
   box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
   margin-bottom:20px;
 }
-
 .imageprojet:hover {
   filter: none; /* IE6-9 */
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
@@ -367,6 +353,13 @@ body.volde h6{
 /* Bouton stop video */
 #exitbtn {
   z-index: 4;
+  width: 30px;
+}
+.close {   
+  position: absolute;
+  top: 5px; right: 5px;
+  z-index: 4;
+  color: whitesmoke
 }
 /* effet d 'ecriture' seulement en CSS */
 /* .typewriter {
@@ -394,7 +387,6 @@ body.volde h6{
   from, to { border-color: transparent }
   50% { border-color: orange }
 } */
-
 /* test image effet glitch */
  .button:before {
   content: "";
@@ -410,7 +402,6 @@ body.volde h6{
   -webkit-animation: scan 2s infinite;
   opacity: 1;
 }
-
 @-webkit-keyframes glitch {
   0% {
     -moz-transform: skewX(0deg);
@@ -520,21 +511,17 @@ body.volde h6{
 } 
 /* 
 fleche et animationn */
-
 /* @keyframes down{
 	0% {position:relative; top:0px; opacity: 0}
 	50% {position:relative; top:15px; opacity: 0.5}
 	100% {position:relative; top:30px; opacity: 1}
-
 }
-
 .fleche{
 	animation: down 1s infinite linear alternate;
   width: 50px;
   margin-bottom: 20px;
   left: 83px
 } */
-
 /* .fade {
   position: relative;
   width: 100%;
@@ -543,7 +530,6 @@ fleche et animationn */
   background-image: linear-gradient(0deg, transparent, black 75%);
   z-index: 1;
 } */
-
 .star-wars {
   display: flex;
   justify-content: center;
@@ -559,24 +545,20 @@ fleche et animationn */
   text-align: justify;
   top: -80px;
 }
-
 .crawl {
   position: relative;
   top: 99999px;
   transform-origin: 50% 100%;
   animation: crawl 30s ease-out;
 }
-
 .crawl > .title {
   font-size: 90%;
   text-align: center;
 }
-
 .crawl > .title h1 {
   margin: 0 0 100px;
   text-transform: uppercase;
 }
-
 @keyframes crawl {
 	0% {
     top: -100px;
@@ -587,13 +569,11 @@ fleche et animationn */
     transform: rotateX(25deg) translateZ(-2500px);
   }
 }
-
 /* Effet pulse sur image */
  #dumb:hover {
 box-shadow: 0 0 0 rgba(10, 10, 8, 0.4);
   animation: pulse 2s infinite;
 }
-
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
@@ -619,11 +599,8 @@ box-shadow: 0 0 0 rgba(10, 10, 8, 0.4);
       box-shadow: 0 0 0 0 rgba(5, 5, 4, 0);
   }
 }
- 
-
  /* Test logo shake  */
-
- #dumb {
+ #dumb, #logoPort {
    cursor: pointer;
    /* animation:heartbeat 1.5s ease-in-out infinite both; */
    -webkit-animation: shake-bottom 2.1s ease-in 2s infinite ;
@@ -704,32 +681,6 @@ box-shadow: 0 0 0 rgba(10, 10, 8, 0.4);
             transform: rotate(0deg);
   }
 }
-/* Test logo heartbeat  */
-
-/* @keyframes heartbeat {
-  from {
-    transform:scale(1);
-    transform-origin:center center;
-    animation-timing-function:ease-out
-  }
-  10%{
-    transform:scale(.91);
-    animation-timing-function:ease-in
-  }
-  17%{
-    transform:scale(.98);
-    animation-timing-function:ease-out
-  }
-  33%
-  {transform:scale(.87);
-    animation-timing-function:ease-in
-  }
-  45%{
-    transform:scale(1);
-    animation-timing-function:ease-out
-  }
-}
- */
 /* test animation video fullscreen */
   #video-theme {
     -webkit-animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -759,11 +710,3 @@ box-shadow: 0 0 0 rgba(10, 10, 8, 0.4);
       opacity: 1;
     }
   }
-  .close {
-    font-size: 20px;   
-    position: absolute;
-    top: 5px; right: 5px;
-    z-index: 4;
-    color: whitesmoke
-}
-

@@ -1,7 +1,6 @@
 body {
     color: bisque
 }
-
 .bg-primary {
     background: darkolivegreen !important;
   }
@@ -19,7 +18,6 @@ h5,
 h6{
     color: olive !important;
   }
-  
 body.volde {
     color: #F8F6F6 !important;
   }
