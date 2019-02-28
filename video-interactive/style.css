@@ -1,21 +1,3 @@
-/* 
-  @media (min-width: 768px) {
-    .h-md-100 {
-         height: 100vh; }
-}
-.btn-round { border-radius: 30px; }
-.bg-indigo { background: indigo; }
-.text-cyan { color: #35bdff; }
-
-video{
-    object-fit: cover;
-} */
-
-
-.skin{
-
-}
-
 .full-width{
 width: 100%;
 }
@@ -109,10 +91,6 @@ p {
 #btn-start {
         text-align: center;
 }
-
-
-
-/* Style et animation button */
 
 
 
